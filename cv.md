@@ -109,3 +109,6 @@ console.log(popularPostsIds(inputPosts, 50)); // []
 | Месторасположение | Россия, Приморский край, Большой Камень |
 
 ---
+
+####Мой личный GITHUB-профиль:
+[![img](https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/bhghl3dfvwcjwbllm9i0.png)](https://github.com/MaxRattle) #**_<center class="text">Кликни на картинку!</center>_**
