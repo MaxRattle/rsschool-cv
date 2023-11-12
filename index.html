@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rsschool-cv-html</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Максим Сушков</h1>
+    <hr>
+    <h2>Trainee Frontend Developer</h2>
+    <hr>
+    <h2>Контакты</h2>
+      <p>Телефон: +7-914-075-83-20</p>
+      <p>Почта</p>
+      <p>Соц. Сеть: <a href="https://vk.com/lilbrokenheart21">VK</a></p>
+    <hr>
+    <h3>О себе:</h3>
+      Начал самостоятельно изучать веб-разработку 27.08.2023. До этого
+      был опыт в изучении Python в 2021 году. В силу обстоятельств я забросил
+      изучение.<br>
+      Сейчас появилось время и я вновь начал изучать программирование. Прошел
+      несколько курсов на ютубе и скачанных. Работаю по специальности (не
+      связанно с IT).<br>
+      Почему я решил изучать программирование? Во-первых это интересно,
+      во-вторых дает ряд преимуществ (удаленная работа, перспективы развития,
+      интересные задачи и высокая ЗП).
+    <hr>
+    <h3>Навыки:</h3>
+      <div>
+        <p>Soft skills:</p>
+        <ul>
+          <li>Тактичность</li>
+          <li>Умение слушать и договариваться</li>
+          <li>Пунктуальность и взаимоуважение</li>
+        </ul>
+        <p>Technical skills:</p>
+        <ul>
+          <li>HTML+CSS: верстка, flex-box, grid, адаптив</li>
+          <li>
+            S: ES6, базовые знания (типы данных, области видимости итд.), DOM,
+            ООП (не использовал, но понимания имеется)
+          </li>
+          <li>
+            React: базовые hooks,components, JSX. (в целом подзабылось, на
+            данном этапе прошел курс, но практикой не закрепил)
+          </li>
+          <li>GIT: базовые команды</li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+      <p>Пример кода:</p>
+      <ul>
+        <li>
+          JS: ЗАДАЧА 47 - Использование метода "reduce" для создания массива
+        </li>
+      </ul>
+      <ol>
+        <li>
+          Создайте функцию "popularPostsIds" с двумя параметрами "posts" и
+          "minimalComentsQty"
+        </li>
+        <li>
+          Эта функция "popularPostsIds" должна возвращать массив идентификаторов
+          постов сообщений, у которых количество комментариев не меньше
+          "minimalComentsQty"
+        </li>
+      </ol>
+      <pre class="pre-code">
+        <code>
+            const inputPosts = [
+          {
+            title: "Как быстро выучить JavaScript?",
+            postId: 3421,
+            comments: 25,
+          },
+          {
+            title: "Где используется JavaScript?",
+            postId: 5216,
+            comments: 3,
+          },
+          {
+            title: "Какая разница между React и Angular?",
+            postId: 8135,
+            comments: 12,
+          },
+          ];
+          //решение
+          function popularPostsIds(posts, minimalComentsQty) {
+          return posts.reduce(
+            (postIds, commentIds) =&gt;
+              commentIds.comments &gt;= minimalComentsQty
+                ? postIds.concat([commentIds.postId])
+                : postIds,
+            []
+          );
+          }
+          //проверка
+          console.log(popularPostsIds(inputPosts, 10)); // [3421, 8135]
+          console.log(popularPostsIds(inputPosts, 15)); // [3421]
+          console.log(popularPostsIds(inputPosts, 50)); // []
+        </code>
+      </pre>
+    </div>
+    <hr>
+    <div>
+      <p>Курсы:</p>
+      <ul>
+        <li>
+          JavaScript - Полный Курс по JavaScript. (Автор: Bogdan Stashchuk)
+        </li>
+        <li>Фундаментальный JavaScript. (Автор: Михаил Непомнящий)</li>
+        <li>React - Полный Курс по React. (Автор: Bogdan Stashchuk)</li>
+        <li>
+          <a href="https://learn.javascript.ru/">Современный учебник по JavaScript</a>
+        </li>
+        <li>Курс Rs-School: JavaScript/Front-end 2023Q4 (в процессе)</li>
+      </ul>
+    </div>
+    <hr>
+    <div>
+      <p>Языки:</p>
+      <ul>
+        <li>Русский (native)</li>
+        <li>
+          Английский (B1 по итогам обучения в качестве дополнительного
+          образования при вузе)
+        </li>
+      </ul>
+    </div>
+    <hr>
+      <p>Личная информация:</p>
+      <table>
+        <tbody>
+          <tr>
+            <td>Имя/Фамилия</td>
+            <td>Максим Сушков</td>
+          </tr>
+          <tr>
+            <td>Дата рождения</td>
+            <td>21.02.1999</td>
+          </tr>
+          <tr>
+            <td>Месторасположение</td>
+            <td>Россия, Приморский край, Большой Камень</td>
+          </tr>
+        </tbody>
+      </table>
+    <hr>
+    <div>
+      <p>Мой личный GITHUB-профиль:</p>
+      <a href="https://github.com/MaxRattle"><img src="https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/bhghl3dfvwcjwbllm9i0.png" alt="Картинка GITHUB-профиль">
+      </a>
+      <br>
+      <p><b>Кликни на картинку!</b></p>
+    </div>
+  </body>
+</html>
