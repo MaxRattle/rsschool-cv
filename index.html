@@ -90,8 +90,8 @@
           //решение
           function popularPostsIds(posts, minimalComentsQty) {
           return posts.reduce(
-            (postIds, commentIds) =>
-              commentIds.comments >= minimalComentsQty
+            (postIds, commentIds) =&gt;
+              commentIds.comments &gt;= minimalComentsQty
                 ? postIds.concat([commentIds.postId])
                 : postIds,
             []
